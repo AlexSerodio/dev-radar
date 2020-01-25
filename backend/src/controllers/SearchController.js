@@ -6,7 +6,7 @@ const maxDistanceInMeters = 10000;
 module.exports = {
     async index(req, resp) {
         const filter = buildFilter(req.query);
-        const devs = await Dev.find(filter).collation({ locale: "en" }).sort('name');
+        const devs = await Dev.find(filter).collation({ locale: 'en' }).sort('name');
 
         return resp.json(devs);
     }

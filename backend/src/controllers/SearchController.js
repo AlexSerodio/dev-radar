@@ -20,7 +20,7 @@ module.exports = {
                     $maxDistance: 10000
                 }
             }
-        });
+        }).collation({ locale: "en" }).sort('name');
 
         return resp.json(devs);
     }

@@ -5,7 +5,7 @@ const { findConnections, sendMessage } = require('../websocket');
 
 module.exports = {
     async index(req, resp) {
-        const devs = await Dev.find();
+        const devs = await Dev.find().collation({ locale: "en" }).sort('name');
         
         return resp.json(devs);
     },

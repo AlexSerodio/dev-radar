@@ -1,13 +1,13 @@
 const { Router } = require('express');
-const DevControler = require('./controllers/DevControler');
+const DevController = require('./controllers/DevController');
 const SearchController = require('./controllers/SearchController');
 
 const routes = Router();
 
-routes.get('/devs', DevControler.index);
-routes.post('/devs', DevControler.store);
-routes.put('/devs', DevControler.update);
-routes.delete('/devs', DevControler.delete);
+routes.get('/devs', DevController.index);
+routes.post('/devs', DevController.store);
+routes.put('/devs', DevController.update);
+routes.delete('/devs', DevController.delete);
 
 routes.get('/search', SearchController.index);
 

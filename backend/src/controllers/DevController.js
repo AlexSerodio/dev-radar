@@ -14,6 +14,9 @@ module.exports = {
         const { github_username, techs, latitude, longitude } = req.body;
         const techsArray = parseStringAsArray(techs);
 
+        if (!github_username)
+        return resp.status(400).json({ message: "Field github_username cannot be empty." });
+
         let dev = await Dev.findOne({ github_username });
 
         if (dev)
@@ -29,6 +32,9 @@ module.exports = {
 
     async update(req, resp) {
         const { github_username, techs, latitude, longitude } = req.body;
+
+        if (!github_username)
+            return resp.status(400).json({ message: "Field github_username cannot be empty." });
 
         const devExist = await Dev.exists({ github_username });
 

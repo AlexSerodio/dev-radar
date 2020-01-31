@@ -82,7 +82,7 @@ function Main({ navigation }) {
                         }}>
                             <View style={styles.callout}>
                                 <Text style={styles.devName}>{dev.name}</Text>
-                                <Text style={styles.devBio}>{dev.bio}</Text>
+                                <Text style={styles.devBio}>{dev.bio || 'No bio'}</Text>
                                 <Text style={styles.devTechs}>{dev.techs.join(', ')}</Text>
                             </View>
                         </Callout>
@@ -92,7 +92,7 @@ function Main({ navigation }) {
             <View style={styles.searchForm}>
                 <TextInput  
                     style={styles.searchInput} 
-                    placeholder="Buscar devs por techs"
+                    placeholder="Search devs for techs"
                     placeholderTextColor='#999'
                     autoCapitalize='words'
                     autoCorrect={false}

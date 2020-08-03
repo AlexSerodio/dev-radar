@@ -1,6 +1,6 @@
 # Dev Radar
 
-A web and mobile application developed using **Node**, **MongoDB**, **React** and **React-Native**, to register and search for pre-registered developers using theirs github profile as reference. The project was developed following a workshop from [Rocketseat](https://rocketseat.com.br/).
+A web and mobile application developed using **Node**, **MongoDB**, **React** and **React-Native**, to register and search for pre-registered developers using theirs github profile as reference. The project was created during a course from [Rocketseat](https://rocketseat.com.br/) called **Semana Omnistack 10.0**.
 
 <p align="center">
   <img alt="Mobile" src=".github/mobile-screenshot.png" width="20%">

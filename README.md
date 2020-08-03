@@ -1,6 +1,6 @@
 # Dev Radar
 
-A web and mobile application developed using **Node**, **MongoDB**, **React** and **React-Native**, to register and search for pre-registered developers using theirs github profile as reference. The project was created during a course from [Rocketseat](https://rocketseat.com.br/) called **Semana Omnistack 10.0**.
+A web and mobile application to register and search for developers using theirs github profile, developed using **Node**, **MongoDB**, **React** and **React-Native** during the **Semana Omnistack 10.0** course from [Rocketseat](https://rocketseat.com.br/).
 
 <p align="center">
   <img alt="Mobile" src=".github/mobile-screenshot.png" width="20%">
@@ -17,10 +17,10 @@ A web and mobile application developed using **Node**, **MongoDB**, **React** an
 
 
 ## Getting Started
-The project is divided in three folders: backend, web and mobile. 
+The project is divided in three projects: backend, web and mobile. 
 
 ### Backend
-An API developed with node, express and MongoDB, making available the following resources:
+Developed with node, express and MongoDB, provides the following resources:
 * **GET /devs** - get all developers registered sorted by name
 * **POST /devs** - add new developer
 * **GET /search** - get developers within a radius of 10 kilometers who are registered with the technologies informed, sorted by name
@@ -59,6 +59,3 @@ cd web
 npm install
 npm start
 ```
-
-## Acknowledgments
-This project was developed for study purposes following a workshop called **Semana Omnistack 10.0** from [Rocketseat](https://rocketseat.com.br/) and has no intention of being used commercially.
